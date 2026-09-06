@@ -34,7 +34,7 @@ The UI provides:
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### 1. Upload Firmware
 - Go to `version1/`
