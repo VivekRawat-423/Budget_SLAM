@@ -1,21 +1,21 @@
-# 🔵 Budget SLAM (Version 1)
+#  Budget SLAM (Version 1)
 
 A low-cost 2D scanning system built using **ESP32 + dual VL53L0X sensors + servo**, capable of generating a 360° distance map and streaming it in real-time over WebSockets.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔄 180° servo sweep → full 360° scan using dual sensors  
-- 📡 Real-time data streaming via WebSocket  
-- 📊 Live point + full scan transmission  
-- ⚡ Continuous ranging mode for fast updates  
-- 🎯 Configurable resolution & speed  
-- 💸 Built with low-cost components  
+-  180° servo sweep → full 360° scan using dual sensors  
+-  Real-time data streaming via WebSocket  
+-  Live point + full scan transmission  
+-  Continuous ranging mode for fast updates  
+-  Configurable resolution & speed  
+-  Built with low-cost components  
 
 ---
 
-## 🧠 Working Principle
+##  Working Principle
 
 - A servo sweeps from **0° → 180°**
 - Two **VL53L0X sensors**:
@@ -28,7 +28,7 @@ A low-cost 2D scanning system built using **ESP32 + dual VL53L0X sensors + servo
 
 ---
 
-## 🔌 Hardware Used
+##  Hardware Used
 
 - ESP32
 - 2 × VL53L0X ToF Sensors
@@ -37,7 +37,7 @@ A low-cost 2D scanning system built using **ESP32 + dual VL53L0X sensors + servo
 
 ---
 
-## ⚙️ Pin Configuration
+##  Pin Configuration
 
 | Component | Pin |
 |----------|-----|
@@ -49,24 +49,24 @@ A low-cost 2D scanning system built using **ESP32 + dual VL53L0X sensors + servo
 
 ---
 
-## 🧾 Data Format
+##  Data Format
 
-### 📍 Point Data (live)
+###  Point Data (live)
 ```json
 {"t":"p","a":90,"d":450}
 ```
 
-🧭 Full Scan
+ Full Scan
 ```json
 {"t":"s","pts":[[0,300],[1,320]]}
 ```
-🛠️ Configuration
+ Configuration
 ```cpp
 #define STEP_DEG    2      // resolution (1 = high detail, slower)
 #define STEP_DELAY  15     // ms delay per step
 #define MAX_DIST    2000   // max valid distance (mm)
 ```
-📡 WebSocket
+ WebSocket
 ```cpp
 Runs on port: 81
 ```
@@ -74,7 +74,7 @@ Connect via:
 ```cpp
 ws://<ESP32_IP>:81
 ```
-▶️ How to Run
+ How to Run
 Flash code to ESP32
 Set your WiFi credentials:
 ```cpp
@@ -84,7 +84,7 @@ const char* PASSWORD = "your_password";
 Open Serial Monitor → note IP
 Connect from browser UI
 
-📌 Notes
+ Notes
 
 XSHUT pins are used to assign unique I2C addresses
 Continuous mode improves speed
