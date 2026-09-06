@@ -1,4 +1,4 @@
-# 🛰️ Budget SLAM Scanner
+#  Budget SLAM Scanner
 
 A **low-cost DIY SLAM-style scanning system** built using ESP32, dual ToF sensors, and a custom WebSocket-based visualization UI.
 
@@ -6,7 +6,7 @@ A **low-cost DIY SLAM-style scanning system** built using ESP32, dual ToF sensor
 
 ---
 
-## 🎥 Project Overview
+##  Project Overview
 
 - Real-time 2D environment scanning  
 - Browser-based radar-style visualization  
@@ -15,18 +15,18 @@ A **low-cost DIY SLAM-style scanning system** built using ESP32, dual ToF sensor
 
 ---
 
-## 🌐 Web Interface
+##  Web Interface
 
 The UI provides:
 
-- 📡 Live scan visualization  
-- 📊 Stats (points, min/max distance)  
-- 🎛️ Controls (scale, grid, sweep, etc.)  
-- 🧾 Logging system  
+-  Live scan visualization  
+-  Stats (points, min/max distance)  
+-  Controls (scale, grid, sweep, etc.)  
+-  Logging system  
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 1. ESP32 scans environment using servo + sensors  
 2. Data is streamed via WebSocket  
@@ -49,7 +49,7 @@ The UI provides:
   
 ---
 
-## 🎯 Why This Project?
+##  Why This Project?
 
 - Explore **low-cost SLAM concepts**  
 - Learn **sensor fusion basics**  
@@ -57,16 +57,16 @@ The UI provides:
 
 ---
 
-## 🔥 Future Roadmap
+##  Future Roadmap
 
-- 🧠 SLAM algorithms (GMapping / Cartographer)  
-- 🤖 Mobile robot integration  
-- 🗺️ Persistent mapping  
-- 📍 Object detection  
+-  SLAM algorithms (GMapping / Cartographer)  
+-  Mobile robot integration  
+-  Persistent mapping  
+-  Object detection  
 
 ---
 
-## 💡 Inspiration
+##  Inspiration
 
 This project mimics basic functionality of:
 - LiDAR scanners  
@@ -75,7 +75,7 @@ This project mimics basic functionality of:
 
 ---
 
-## ⭐ Contribute
+##  Contribute
 
 Feel free to:
 - Improve UI  
